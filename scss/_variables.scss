@@ -1,0 +1,36 @@
+$primary:                     #FFBC2C;
+$secondary:                   #5F90FF;
+
+$font-family-sans-serif:        'Roboto', sans-serif;
+$font-size-base:                1.1rem;
+$line-height-base:              1.7;
+
+$font-weight-light:             200;
+$font-weight-normal:            400;
+$font-weight-medium:            500;
+$font-weight-bold:              700;
+
+$input-btn-padding-y:           .3rem;
+$input-btn-padding-x:           1.2rem;
+
+$input-btn-padding-y-lg:        .5rem;
+$input-btn-padding-x-lg:        1.2rem;
+
+
+$transition-base:               all .15s ease;
+
+
+
+$trans-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+
+$trans-time-fast: 0.15s;
+$trans-time-normal: 0.25s;
+$trans-time-slow: 0.35s;
+
+$trans-fast: $trans-time-fast ease;
+$trans-normal: $trans-time-normal ease;
+$trans-slow: $trans-time-slow ease;
+
+$trans-material-fast: $trans-time-fast $trans-bezier;
+$trans-material-normal: $trans-time-normal $trans-bezier;
+$trans-material-slow: $trans-time-slow $trans-bezier;

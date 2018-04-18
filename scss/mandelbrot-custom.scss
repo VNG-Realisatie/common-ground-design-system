@@ -1,0 +1,90 @@
+$grey-10: lighten(black, 98%);
+$grey-20: lighten(black, 90%);
+$grey-30: lighten(black, 60%);
+$grey-40: lighten(black, 30%);
+
+.Header {
+    box-shadow: none;
+    border-bottom: 1px solid $grey-20;
+}
+
+.Pen,
+.Header,
+.Frame-panel--sidebar {
+    background-color: $grey-10;
+}
+
+.Frame-handle,
+.Preview-handle,
+.Pen-handle {
+    background-color: $grey-10;
+
+    &:hover, &:focus, &:active {
+        background-color: $grey-10;
+    }
+
+    &:hover {
+        cursor: grab;
+    }
+}
+
+.Pen-header {
+    display: none;
+}
+
+.Preview {
+    border-top: none;
+}    
+
+.Tree-collectionLabel {
+    color: $grey-40;
+}
+
+.Header-button {
+    border-color: $grey-20 !important;
+
+    &:hover {
+        background-color: $grey-20;        
+    }
+}
+
+[dir="ltr"] .Tree-depth-2 .Tree-collectionLabel, [dir="ltr"] .Tree-depth-2 .Tree-entityLink {
+    padding-left: 3rem;
+}
+
+.Tree-collectionLabel span {
+    [dir="ltr"] & {
+        margin-left: -2rem;
+        padding-left: 1rem;
+    }
+
+    &::before {
+        top: 0.45rem;
+        opacity: 0.75;
+    }
+}
+
+.Frame-panel--sidebar {
+    [dir="ltr"] & {
+        border: none;
+    }
+}
+
+[dir="ltr"] .Preview-handle,
+.Preview,
+.Pen-info {
+    border-color: $grey-20;
+}
+
+.Tree-title {
+    color: $grey-30;
+}
+
+.Status-dot {
+    background-color: transparent;
+}
+
+.Header-navToggle svg {
+    height: 18px;
+    fill: $grey-40;
+}
