@@ -1,11 +1,15 @@
 $grey-10: lighten(black, 98%);
-$grey-20: lighten(black, 90%);
-$grey-30: lighten(black, 60%);
-$grey-40: lighten(black, 30%);
+$grey-20: lighten(black, 96%);
+$grey-30: lighten(black, 94%);
+$grey-40: lighten(black, 90%);
+$grey-50: lighten(black, 60%);
+$grey-80: lighten(black, 30%);
+
+$primary: #6699FF;
 
 .Header {
     box-shadow: none;
-    border-bottom: 1px solid $grey-20;
+    border-bottom: 1px solid $grey-40;
 }
 
 .Pen,
@@ -37,14 +41,14 @@ $grey-40: lighten(black, 30%);
 }    
 
 .Tree-collectionLabel {
-    color: $grey-40;
+    color: $grey-80;
 }
 
 .Header-button {
-    border-color: $grey-20 !important;
+    border-color: $grey-40 !important;
 
     &:hover {
-        background-color: $grey-20;        
+        background-color: $grey-40;        
     }
 }
 
@@ -73,11 +77,11 @@ $grey-40: lighten(black, 30%);
 [dir="ltr"] .Preview-handle,
 .Preview,
 .Pen-info {
-    border-color: $grey-20;
+    border-color: $grey-40;
 }
 
 .Tree-title {
-    color: $grey-30;
+    color: $grey-50;
 }
 
 .Status-dot {
@@ -86,5 +90,28 @@ $grey-40: lighten(black, 30%);
 
 .Header-navToggle svg {
     height: 18px;
-    fill: $grey-40;
+    fill: $grey-80;
+}
+
+.Tree-entityLink,
+.Tree-collectionLabel {
+    &:hover {
+        background-color: $grey-20;
+    }
+
+    .is-current & {
+        background-color: $grey-30;        
+    }
+}
+
+a.Tree-entityLink:hover {
+    color: $primary;
+}
+
+a {
+    color: $primary;
+
+    &:hover {
+        color: darken($primary, 10%);
+    }
 }
