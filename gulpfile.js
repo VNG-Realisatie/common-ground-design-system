@@ -216,7 +216,7 @@ gulp.task('fonts:watch', function () {
 /* Images */
 
 gulp.task('images:copy', function () {
-	return gulp.src('assets/img/**/*')
+	return gulp.src('src/img/**/*')
 	.pipe(gulp.dest('public/img'));
 });
 
