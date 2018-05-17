@@ -52,56 +52,6 @@ main {
     justify-content: center;
 }
 
-.navbar-brand {
-    margin-right: 230px;
-
-    svg {
-        height: 20px;
-    }
-}
-
-.navbar-expand {
-    > .container {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
-    .navbar-nav .nav-item {
-        padding: 20px 0;
-
-        &.nav-item--lang {
-            position: relative;
-            overflow: hidden;
-
-            svg {
-                position: absolute;
-                top: 27px;
-                left: 1px;
-                height: 44px;
-                z-index: -1;
-            }
-        }
-        .nav-link {
-            display: inline-flex;
-            align-items: center;
-            height: 56px;
-            padding-top: 0;
-            padding-bottom: 0;
-            padding-left: 20px;
-            padding-right: 20px;
-            color: $gray-500;
-
-            &:hover {
-                color: $gray-800;
-            }
-        }
-
-        &.active .nav-link {
-            color: $gray-800;
-        }
-    }
-}
-
 svg {
     display: block;
 }

@@ -1,19 +1,24 @@
 <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
     <a class="navbar-brand" href="{{ to }}">
-        {{!-- {{ readFile "static/svg/logo.svg" | safeHTML }}                             --}}
-
+        <img src="{{ path '/img/logo.svg' }}" />            
     </a>
 
     <ul class="navbar-nav">
-        {{!-- {{ $currentPage := . }}
-        {{ range .Site.Menus.main }}
-            <li class="nav-item{{ if $currentPage.IsMenuCurrent "main" . }} active{{end}}">
-                <a class="nav-link" href="{{ .URL | absLangURL }}">
-                    {{ .Name }}
-                    {{ if $currentPage.IsMenuCurrent "main" . }}<span class="sr-only">(active)</span>{{end}}
-                </a>
-            </li>
-        {{ end }} --}}
+        <li class="nav-item active">
+            <a class="nav-link" href="{{ to }}">
+                Directory
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ to }}">
+                Docs
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ to }}">
+                About
+            </a>
+        </li>
     </ul>
 
     <ul class="navbar-nav ml-md-auto">
