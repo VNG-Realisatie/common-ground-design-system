@@ -92,9 +92,9 @@ gulp.task('css:process', function () {
 		'scss/base.scss',
 		'scss/mandelbrot-custom.scss'
 	])
-	.pipe(plumber())
+	// .pipe(plumber())
 	.pipe(gulpif(!isProduction, sourcemaps.init()))
-	.pipe(sassGlob())
+	// .pipe(sassGlob())
 	.pipe(sass.sync({
 		precision: 10,
 		includePaths: ['./node_modules']
@@ -112,7 +112,7 @@ gulp.task('css:watch', function () {
 	gulp.watch(STYLES_WATCHLIST, watchOpt, gulp.series('css'));
 });
 
-gulp.task('css', gulp.series(gulp.parallel('css:clean', 'css:lint'), 'css:process'));
+gulp.task('css', gulp.series(gulp.parallel('css:clean'), 'css:process'));
 
 /* Javascript */
 gulp.task('js:lint', () => {
@@ -239,7 +239,7 @@ gulp.task('build:clean', function () {
 	return del(['dist']);
 });
 
-gulp.task('assets', gulp.series('svg', gulp.parallel('css', 'js:lint', 'js', 'fonts', 'images')));
+gulp.task('assets', gulp.series('svg', gulp.parallel('css', 'js', 'fonts', 'images')));
 gulp.task('watch', gulp.parallel('svg:watch', 'css:watch', 'js:watch', 'fonts:watch', 'images:watch'));
 
 gulp.task('dev', gulp.series('assets', 'fractal:start', 'watch'));

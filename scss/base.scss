@@ -4,6 +4,6 @@
 @import 'node_modules/bootstrap/scss/bootstrap';
 
 @import 'core';
-@import 'navbar';
 
-@import '../src/**/**/*.scss';
+@import 'buttons';
+@import 'navbar';
