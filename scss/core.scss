@@ -1,5 +1,5 @@
 body {
-    padding-top: 56px;
+    // padding-top: 56px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
@@ -127,32 +127,6 @@ h4 {
 
 p {
     margin-bottom: 2rem;
-}
-
-.btn-lg, .btn-group-lg > .btn {
-    font-size: 1rem;
-}
-
-.btn {
-    font-weight: $font-weight-bold;
-    word-spacing: 1px;
-    border-radius: 4px;
-}
-
-.btn-primary {
-    color: white;
-    border-color: transparent !important;
-    padding-top: 8px;
-    padding-bottom: 10px;
-
-    box-shadow: 0 3px 0 transparentize($primary, .8);
-    
-    &:not(.disabled):not(.disabled) {
-        &:hover,
-        &:active {
-            color: white;
-        }
-    }
 }
 
 :active {

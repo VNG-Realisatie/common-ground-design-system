@@ -17,7 +17,7 @@ $sec-500: tint($secondary, 35%);
 $white:    #fff;
 $gray-100: #f8f9fa;
 $gray-200: #e9ecef;
-$gray-300: #dee2e6;
+$gray-300: #E6E8EB;
 $gray-400: #ced4da;
 $gray-500: #adb5bd;
 $gray-600: #6c757d;
@@ -37,6 +37,7 @@ $font-weight-light:             300;
 $font-weight-normal:            400;
 $font-weight-medium:            600;
 $font-weight-bold:              700;
+$font-weight-black:             800;
 
 // Font
 $font-family-sans-serif:        'Muli', sans-serif;
@@ -76,11 +77,15 @@ $container-max-widths: (
 // Grid
 $grid-gutter-width:             100px;
 
-// Padding
+// Buttons
+$btn-font-weight:               $font-weight-bold;
 $input-btn-padding-y-lg:        .5rem;
 $input-btn-padding-x-lg:        1rem;
 
-$jumbotron-padding:             4rem;
+$border-radius:                 3px;
+$border-radius-lg:              5px;
+$border-radius-sm:              0;
+
 
 // Transition
 $transition-base:               all .15s ease;

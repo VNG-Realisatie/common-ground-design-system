@@ -2,9 +2,7 @@ const variants = [
 	'primary',
 	'secondary',
 	'outline-primary',
-	'outline-secondary',
-	'sm',
-	'lg',
+	'outline-secondary'
 ];
 
 // Only visible with one of the above variants
@@ -33,7 +31,7 @@ module.exports = {
 	title: 'Button',
 	status: 'ready',
 	context: {
-		label: 'Button',
+		label: 'Aan de slag',
 		to: '#'
 	},
 	variants: variantsContext
