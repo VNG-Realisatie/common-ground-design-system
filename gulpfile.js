@@ -25,20 +25,15 @@ const logger = fractal.cli.console;      // make use of Fractal's console object
 const watchOpt = {awaitWriteFinish: true};
 
 const STYLES_WATCHLIST = [
-	'scss/**/*.scss',
-	'src/**/*.scss'
+	'src/scss/**/*.scss'
 ];
 
 const JS_LINT_WATCHLIST = [
-	'components/**/*.js',
-	'js/**/*.js',
-	'*.js'
+	'src/js/**/*.js'
 ];
 
 const JS_BUILD_WATCHLIST = [
-	'components/**/*.js',
-	'!components/**/*.config.js',
-	'js/**/*.js'
+	'src/js/**/*.js'
 ];
 
 const SVG_WATCHLIST = [
@@ -89,8 +84,8 @@ gulp.task('css:process', function () {
 	}
 
 	return gulp.src([
-		'scss/base.scss',
-		'scss/mandelbrot-custom.scss'
+		'src/scss/base.scss',
+		'src/scss/mandelbrot-custom.scss'
 	])
 	// .pipe(plumber())
 	.pipe(gulpif(!isProduction, sourcemaps.init()))
@@ -232,7 +227,7 @@ gulp.task('images:clean', function (done) {
 gulp.task('images', gulp.series('images:clean', 'images:copy'));
 
 gulp.task('images:watch', function () {
-	gulp.watch('assets/img/**/*', watchOpt, gulp.parallel('images'));
+	gulp.watch('src/img/**/*', watchOpt, gulp.parallel('images'));
 });
 
 gulp.task('build:clean', function () {

@@ -16,7 +16,7 @@ fractal.set('project.title', 'Common Ground design system');
 /*
  * Tell Fractal where to look for components.
  */
-fractal.components.set('path', path.join(__dirname, 'src'));
+fractal.components.set('path', path.join(__dirname, 'content'));
 
 fractal.components.set('default.preview', '@preview');
 fractal.components.set('default.status', 'wip');
