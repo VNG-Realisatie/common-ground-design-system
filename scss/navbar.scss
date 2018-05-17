@@ -1,0 +1,28 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 56px;
+    background-color: $white;
+    padding: 0 50px;
+    box-shadow: 0 1px 0 transparentize(black, 0.95);
+    z-index: $zindex-fixed;
+}
+
+.nav-svg {
+    padding: 10px !important;
+
+    svg {
+        height: 24px;
+    }
+}
+
+.bd-sidebar {
+    position: fixed;
+    top: 56px;
+    bottom: 0;
+    padding: 0 40px;
+    background-color: $gray-100;
+    z-index: $zindex-sticky;    
+}
