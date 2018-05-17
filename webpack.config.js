@@ -5,7 +5,7 @@ const baseConfig = {
 		ui: './js/ui.js'
 	},
 	output: {
-		path: './public/js/',
+		path: __dirname + '/public/js',
 		filename: '[name].bundle.js'
 	},
 	module: {
@@ -16,6 +16,17 @@ const baseConfig = {
 			}
 		]
 	},
+	optimization: {
+		splitChunks: {
+			cacheGroups: {
+				commons: {
+					test: /[\\/]node_modules[\\/]/,
+					name: 'vendor',
+					chunks: 'all'
+				}
+			}
+		}
+	},
 	plugins: []
 };
 
@@ -23,15 +34,7 @@ const devConfig = Object.assign({}, baseConfig);
 devConfig.devtool = '#inline-source-map';
 
 const prodConfig = Object.assign({}, baseConfig);
-prodConfig.plugins = prodConfig.plugins.concat([
-	new webpack.optimize.UglifyJsPlugin({
-		sourceMap: true,
-		compress: {
-			screw_ie8: true, // eslint-disable-line camelcase
-			warnings: true
-		}
-	})
-]);
+
 
 module.exports = {
 	dev: devConfig,
