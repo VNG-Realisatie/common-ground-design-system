@@ -2,7 +2,7 @@ const webpack = require('webpack');
 
 const baseConfig = {
 	entry: {
-		ui: './js/ui.js'
+		ui: './src/js/ui.js'
 	},
 	output: {
 		path: __dirname + '/public/js',

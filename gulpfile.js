@@ -148,7 +148,7 @@ gulp.task('js:clean', function () {
 });
 
 gulp.task('js:watch', function () {
-	gulp.watch(JS_LINT_WATCHLIST, watchOpt, gulp.series('js:lint'));
+	// gulp.watch(JS_LINT_WATCHLIST, watchOpt, gulp.series('js:lint'));
 	gulp.watch(JS_BUILD_WATCHLIST, watchOpt, gulp.series('js'));
 });
 
@@ -217,11 +217,11 @@ gulp.task('fonts:watch', function () {
 
 gulp.task('images:copy', function () {
 	return gulp.src('assets/img/**/*')
-	.pipe(gulp.dest('public/assets/img'));
+	.pipe(gulp.dest('public/img'));
 });
 
 gulp.task('images:clean', function (done) {
-	return del(['public/assets/img'], done);
+	return del(['public/img'], done);
 });
 
 gulp.task('images', gulp.series('images:clean', 'images:copy'));
