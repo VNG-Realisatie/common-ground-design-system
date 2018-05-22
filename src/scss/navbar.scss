@@ -1,61 +1,38 @@
 .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     background-color: $white;
     padding: 0 50px;
     box-shadow: 0 1px 0 $gray-300;
     z-index: $zindex-fixed;
 }
 
-.navbar-brand {
+.navbar-nav {
+    .nav-link {
+        display: inline-flex;
+        align-items: center;
+        height: 56px;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 2px;
+        color: $gray-500;
+    
+        &:hover {
+            background-color: $gray-100;
+        }
+    }
+    
+    .active .nav-link {
+        color: $gray-800;        
+    }
+}
+
+.navbar-logo {
     height: 56px;
-    padding: 1px 0 0 0;
-    margin-right: 10px;
+    margin-right: 20px;
 
     display: flex;
     align-items: center;
-}
-
-.navbar-expand {
-    > .container {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
-    .navbar-nav .nav-item {
-        &.nav-item--lang {
-            position: relative;
-            overflow: hidden;
-
-            svg {
-                position: absolute;
-                top: 27px;
-                left: 1px;
-                height: 44px;
-                z-index: -1;
-            }
-        }
-        .nav-link {
-            display: inline-flex;
-            align-items: center;
-            height: 56px;
-            padding-top: 0;
-            padding-bottom: 0;
-            padding-left: 20px;
-            padding-right: 20px;
-            color: $gray-500;
-
-            &:hover {
-                color: $gray-800;
-            }
-        }
-
-        &.active .nav-link {
-            color: $gray-800;
-        }
-    }
 }
 
 .nav-svg {
@@ -70,11 +47,39 @@
     font-size: 16px;
 }
 
-.bd-sidebar {
-    position: fixed;
-    top: 56px;
-    bottom: 0;
-    padding: 0 40px;
-    background-color: $gray-100;
-    z-index: $zindex-sticky;    
+.sidebar-nav {
+    width: 240px;
+    height: 100vh;
+
+    .navbar-nav {
+        margin-top: 40px;
+        padding-left: 40px;
+        padding-right: 40px;
+        
+        .nav-item {
+            margin-left: -40px;
+            margin-right: -40px;
+            
+            .nav-link {
+                height: 36px;
+                width: 100%;
+                padding-left: 40px;
+                padding-right: 40px;
+                font-size: 14px;
+                font-weight: $font-weight-bold;
+
+                &:hover {
+                    color: $color-text;
+                }
+            }
+
+            &.active .nav-link {
+                color: $secondary;
+            }
+        }
+    }
+}
+
+small {
+    color: $gray-500;
 }
