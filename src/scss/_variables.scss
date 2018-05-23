@@ -26,6 +26,14 @@ $gray-800: #343a40;
 $gray-900: #212529;
 $black:    #000;
 
+
+// Link
+$link-color:                    $secondary;
+$link-decoration:               none;
+
+$link-hover-color:              $sec-500;
+$link-hover-decoration:         none;
+
 // $body-color:                  #435166;
 $tooltip-max-width:             340px;
 $tooltip-bg:                    white;
@@ -75,7 +83,7 @@ $container-max-widths: (
 );
 
 // Grid
-$grid-gutter-width:             100px;
+$grid-gutter-width:             40px;
 
 // Buttons
 $btn-font-weight:               $font-weight-bold;
@@ -85,6 +93,10 @@ $input-btn-padding-x-lg:        1rem;
 $border-radius:                 3px;
 $border-radius-lg:              5px;
 $border-radius-sm:              0;
+
+
+// Forms
+
 
 
 // Transition

@@ -1,0 +1,76 @@
+.form-switch {
+    position: relative;
+    display: block;
+    padding-left: 42px;
+  }
+  
+  .form-switch-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    opacity: 0;
+  
+    &:not(:disabled) {
+        cursor: pointer;
+    }
+
+    &:disabled ~ .form-switch-label {
+        color: $text-muted;
+    }
+    
+    &:hover ~ .form-switch-label,
+    &:focus ~ .form-switch-label {
+        &:after {
+            border-color: $gray-600;
+        }
+    }
+
+    &:checked ~ .form-switch-label {
+        &:before {
+            background-color: $primary;
+        }
+        &:after {
+            border-color: $primary;                
+            transform: translateX(14px);
+        }
+    }
+  }
+  
+  .form-switch-label {
+    margin-bottom: 0; // Override default `<label>` bottom margin
+    font-weight: $font-weight-medium;
+    color: $gray-500;
+    
+    &:before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 32px;
+        height: 18px;
+        top: 6px;
+        left: 0;
+        border: 0;
+        border-radius: 9px;
+        background-color: $gray-400;
+        transition: background-color $trans-material-fast;
+        pointer-events: none;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 18px;
+        height: 18px;
+        top: 6px;
+        left: 0;
+        border-radius: 50%;
+        background-color: white;
+        border: 2px solid $gray-400;
+        transition: transform $trans-material-fast, border-color $trans-material-fast;
+        pointer-events: none;        
+    }
+  }

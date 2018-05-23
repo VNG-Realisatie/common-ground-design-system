@@ -115,3 +115,7 @@ a {
         color: darken($primary, 10%);
     }
 }
+
+.Preview-resizer {
+    max-width: calc(100% - 0.625rem);
+}

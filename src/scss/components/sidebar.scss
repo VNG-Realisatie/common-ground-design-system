@@ -1,0 +1,32 @@
+.sidebar {
+    width: 240px;
+    height: 100vh;
+
+    .navbar-nav {
+        margin-bottom: 40px;        
+        padding-left: 40px;
+        padding-right: 40px;
+
+        .nav-item {
+            margin-left: -40px;
+            margin-right: -40px;
+            
+            .nav-link {
+                height: 36px;
+                width: 100%;
+                padding-left: 40px;
+                padding-right: 40px;
+                font-size: 14px;
+                font-weight: $font-weight-bold;
+
+                &:hover {
+                    color: $color-text;
+                }
+            }
+
+            &.active .nav-link {
+                color: $secondary;
+            }
+        }
+    }
+}
