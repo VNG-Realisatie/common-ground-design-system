@@ -84,6 +84,17 @@ small {
     color: $gray-500;
 }
 
+button {
+    padding: 0;    
+    background: none;
+    border: none;
+    text-align: left;
+
+    &:not(:disabled):not(.disabled) {
+        cursor: pointer;
+    }
+}
+
 :active {
     transition-duration: 100ms;
 }

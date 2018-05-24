@@ -7,10 +7,7 @@
     top: 0;
     right: 0;
     bottom: 0;
-    padding: 0;
     width: 52px;
-    background: none;
-    border: none;
     color: $gray-500;
     transition: color $trans-fast;
 
@@ -19,8 +16,6 @@
     justify-content: center;
 
     &:not(:disabled):not(.disabled) {
-        cursor: pointer;
-
         &:hover {
             color: $primary;
         }
