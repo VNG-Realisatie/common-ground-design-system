@@ -8,9 +8,11 @@
     right: 0;
     bottom: 0;
     padding: 0;
-    width: 48px;
+    width: 52px;
     background: none;
     border: none;
+    color: $gray-500;
+    transition: color $trans-fast;
 
     display: flex;
     align-items: center;
@@ -18,5 +20,19 @@
 
     &:not(:disabled):not(.disabled) {
         cursor: pointer;
+
+        &:hover {
+            color: $primary;
+        }
+    }
+}
+
+.actions {
+    background-color: $gray-100;
+    border-bottom: 1px solid $gray-300;
+
+    .form-control {
+        border-top: none;
+        border-bottom: none;
     }
 }

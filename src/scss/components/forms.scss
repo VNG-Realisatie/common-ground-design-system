@@ -44,7 +44,10 @@
   }
   
   .form-switch-label {
+        display: block;
+        padding-bottom: 2px;
     margin-bottom: 0; // Override default `<label>` bottom margin
+    font-size: $font-size-sm;
     font-weight: $font-weight-medium;
     color: $gray-500;
     
@@ -54,7 +57,7 @@
         display: block;
         width: 32px;
         height: 18px;
-        top: 6px;
+        top: 5px;
         left: 0;
         border: 0;
         border-radius: 9px;
@@ -69,7 +72,7 @@
         display: block;
         width: 18px;
         height: 18px;
-        top: 6px;
+        top: 5px;
         left: 0;
         border-radius: 50%;
         background-color: white;
