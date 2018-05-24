@@ -5,8 +5,15 @@
 
 @import 'core';
 
+// override bootstrap components
 @import 'components/buttons';
 @import 'components/card';
 @import 'components/forms';
 @import 'components/navbar';
 @import 'components/sidebar';
+
+
+// custom components
+@import 'custom/search';
+
+

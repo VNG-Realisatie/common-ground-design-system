@@ -37,7 +37,7 @@ const JS_BUILD_WATCHLIST = [
 ];
 
 const SVG_WATCHLIST = [
-	'components/atoms/**/*.svg'
+	'src/icons/**/*.svg'
 ];
 
 let isProduction = false;
@@ -158,33 +158,33 @@ gulp.task('js', gulp.series('js:clean', 'js:process'));
 gulp.task('svg:process', function () {
 	return gulp
 		.src(SVG_WATCHLIST)
-		.pipe(filenames('icons'))
+		// .pipe(filenames('icons'))
 		.pipe(svgmin(function (file) {
 			const prefix = path.basename(file.relative, path.extname(file.relative));
 			return {
 				plugins: [{
 					cleanupIDs: {
 						prefix: prefix + '-',
-						minify: true
+						// minify: true
 					}
 				}]
 			};
 		}))
 		.pipe(svgStore({
-			inlineSvg: true
+			// inlineSvg: true
 		}))
 		.pipe(rename(function (path) {
 			path.basename = '_icons';
 			path.extname = '.hbs';
 			return path;
 		}))
-		.pipe(gulp.dest('components/'))
-		.pipe(rename(function (path) {
-			path.basename = 'inline';
-			path.extname = '.svg';
-			return path;
-		}))
-		.pipe(gulp.dest('public/icons'));
+		.pipe(gulp.dest('content/'))
+		// .pipe(rename(function (path) {
+		// 	path.basename = 'inline';
+		// 	path.extname = '.svg';
+		// 	return path;
+		// }))
+		// .pipe(gulp.dest('public/icons'));
 });
 
 gulp.task('svg:clean', function () {

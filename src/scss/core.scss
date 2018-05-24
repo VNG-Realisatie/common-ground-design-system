@@ -1,16 +1,16 @@
 body {
-    // padding-top: 56px;
+    font-size: 16px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
     text-rendering: optimizeLegibility;
 
-    @include media-breakpoint-down(xl) {
-        font-size: 14px;
-    }
-    @include media-breakpoint-up(xl) {
-        font-size: 16px;
-    }
+    // @include media-breakpoint-down(xl) {
+    //     font-size: 14px;
+    // }
+    // @include media-breakpoint-up(xl) {
+    //     font-size: 16px;
+    // }
 }
 
 main {
