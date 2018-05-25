@@ -10,6 +10,10 @@
     }
 
     > code {
+        padding: $card-spacer-x $card-spacer-y;
+        background-color: $code-background-color;
+        font-weight: $font-weight-medium;
+        
         &:first-child {
             border-top-left-radius: $border-radius;
             border-top-right-radius: $border-radius;

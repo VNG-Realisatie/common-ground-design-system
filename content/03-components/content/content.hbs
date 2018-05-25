@@ -1,0 +1,56 @@
+{{#> @sidebar }}{{/@sidebar}}                
+<div class="content">
+    <div class="container-fluid gutter-lg">
+    <div class="container-fluid gutter-lg">
+            
+            <section>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h2>Getting started</h2>
+                        <p>
+                            The Stripe API is organized around <a href="#">REST</a>. Our API has predictable, resource-oriented URLs, and uses HTTP response codes to
+                            indicate API errors. We use built-in HTTP features, like HTTP authentication and HTTP verbs, which are
+                            understood by off-the-shelf HTTP clients. We support <a href="#">cross-origin resource sharing</a>, allowing you to interact
+                            securely with our API from a client-side web application (though you should never expose your secret
+                            API key in any public website's client-side code). <a href="#">JSON</a> is returned by all API responses, including errors,
+                            although our <a href="#">API libraries</a> convert responses to appropriate language-specific objects.
+                        </p>
+                        <p>
+                            To make the API as explorable as possible, accounts have test mode and live mode API keys. There is no "switch" for changing
+                            between modes, just use the appropriate key to perform a live or test transaction. Requests made with
+                            test mode credentials never hit the banking networks and incur no cost.
+                        </p>
+                        <p>
+                            Be sure to subscribe to Stripe's <a href="#">API announce mailing list</a> to receive information on new additions and changes to Stripe's
+                            API and language libraries.
+                        </p>
+                    </div>
+                    <div class="col-sm-6">
+                        {{#> @code }}{{/@code}}
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h2>Authentication</h2>
+                        <p>
+                            Authenticate your account by including your secret key in API requests. You can manage your API keys in the <a href="#">Dashboard</a>. Your
+                            API keys carry many privileges, so be sure to keep them secure! Do not share your secret API keys in
+                            publicly accessible areas such GitHub, client-side code, and so forth.
+                        </p>
+                        <p>
+                            To use your API key, assign it to <code>stripe.api_key</code>. The Python library will then automatically send this key in each request.
+                        </p>
+                        <p>
+                            All API requests must be made over HTTPS. Calls made over plain HTTP will fail. API requests without authentication will
+                            also fail.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+    </div>
+    </div>
+</div>

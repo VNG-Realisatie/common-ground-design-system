@@ -1,5 +1,9 @@
 .search {
     position: relative;
+
+    .form-control {
+        padding-right: 52px;
+    }
 }
 
 .search_button {
@@ -19,15 +23,5 @@
         &:hover {
             color: $primary;
         }
-    }
-}
-
-.actions {
-    background-color: $gray-100;
-    border-bottom: 1px solid $gray-300;
-
-    .form-control {
-        border-top: none;
-        border-bottom: none;
     }
 }

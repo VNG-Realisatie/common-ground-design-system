@@ -60,6 +60,7 @@ $line-height-base:              1.9;
 $font-size-base:                1rem; // Assumes the browser default, typically `16px`
 $font-size-lg:                  ($font-size-base * 1.25); // 14px
 $font-size-sm:                  ($font-size-base * .875);
+$font-size-tiny:                ($font-size-base * .75); // not bootstrap
 
 
 // Heading
@@ -94,8 +95,34 @@ $container-max-widths: (
 
 
 // Grid
-$grid-gutter-width:             40px;
+$grid-gutter-width:             30px;
+$grid-gutter-width-lg:          60px; // not bootstrap
 
+.container.gutter-lg,
+.container-fluid.gutter-lg {
+    padding-left: $grid-gutter-width-lg / 2;
+    padding-right: $grid-gutter-width-lg / 2;
+
+    .row {
+        margin-right: $grid-gutter-width-lg / -2;
+        margin-left: $grid-gutter-width-lg / -2;
+
+        > [class*="col-"] {
+            padding-left: $grid-gutter-width-lg / 2;
+            padding-right: $grid-gutter-width-lg / 2;
+        }
+    }
+}
+
+.large-gutters {
+    margin-right: -45px;
+    margin-left: -45px;
+
+    > [class*="col-"] {
+        padding-right: 45px;
+        padding-left: 45px;
+    }
+}
 
 // Radius
 $border-radius:                 3px;
@@ -106,11 +133,11 @@ $border-radius-sm:              0;
 // Buttons
 $btn-font-weight:               $font-weight-bold;
 $input-btn-padding-y:           0;
-$input-btn-padding-x:           15px;
+$input-btn-padding-x:           1rem;
 
 
 // Inputs
-$input-height:                  48px; // not bootstrap
+$input-height:                  3rem; // not bootstrap
 $input-border-radius:           0;
 $input-border-color:            $gray-300;
 $input-placeholder-color:       $gray-500;
@@ -128,8 +155,8 @@ $table-cell-padding:            10px 10px 14px;
 
 
 // Cards
-$card-spacer-x:                 24px;
-$card-spacer-y:                 30px;
+$card-spacer-x:                 1.5rem;
+$card-spacer-y:                 2rem;
 
 // Transition
 $transition-base:               all .15s ease;

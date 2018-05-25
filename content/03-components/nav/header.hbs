@@ -1,25 +1,28 @@
 <header class="navbar sticky-top bg-white">
-    <a class="navbar-logo" href="{{ to }}">
-        <img src="{{ path '/img/logo.svg' }}" />            
-    </a>
-
-    <ul class="navbar-nav flex-row">
-        <li class="nav-item active">
-            <a class="nav-link" href="{{ to }}">
-                Directory
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="{{ to }}">
-                Docs
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="{{ to }}">
-                About
-            </a>
-        </li>
-    </ul>
+    <nav aria-label="Page navigation">
+        <ul class="navbar-nav flex-row">
+            <li class="nav-item">
+                <a class="navbar-logo" href="{{ to }}">
+                    <img src="{{ path '/img/logo.svg' }}" />            
+                </a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="{{ to }}">
+                    Directory
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ to }}">
+                    Docs
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ to }}">
+                    About
+                </a>
+            </li>
+        </ul>
+    </nav>
 
     <ul class="navbar-nav flex-row ml-md-auto">
         <li class="nav-item">

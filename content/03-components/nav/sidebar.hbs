@@ -1,48 +1,52 @@
-<nav class="sidebar bg-light">
-    <ul class="navbar-nav">
-        <li class="">
-            <small class="text-uppercase">Topics</small>
-        </li>
-        <li class="nav-item active">
-            <a class="nav-link" href="#">
-                Introduction
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">
-                Authentication
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">
-                Errors
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">
-                Expanding Objects
-            </a>
-        </li>
-    </ul>
+<div class="sidebar bg-light">
+    {{#> @search }}{{/@search}}
+    
+    <nav aria-label="Sub navigation">
+        <ul class="navbar-nav">
+            <li class="">
+                <small class="text-uppercase">Topics</small>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">
+                    Introduction
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    Authentication
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    Errors
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    Expanding Objects
+                </a>
+            </li>
+        </ul>
 
-    <ul class="navbar-nav">
-        <li class="">
-            <small class="text-uppercase">Core resources</small>
-        </li>
-        <li class="nav-item active">
-            <a class="nav-link" href="#">
-                Balance
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">
-                Charges
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">
-                Customers
-            </a>
-        </li>
-    </ul>
-</nav>
+        <ul class="navbar-nav">
+            <li class="">
+                <small class="text-uppercase">Core resources</small>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">
+                    Balance
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    Charges
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    Customers
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>

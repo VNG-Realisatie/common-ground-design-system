@@ -1,21 +1,45 @@
 .sidebar {
+    position: fixed;
+    left: 0;
     width: 240px;
     height: 100vh;
+    border-right: 1px solid $gray-200;
+    z-index: $zindex-sticky;
+
+    + .content {
+        margin-left: 240px;
+    }
+
+    .search {
+        margin-left: -1px;
+        margin-right: -1px;
+        margin-bottom: 2rem;
+
+        .form-control {
+            background-color: transparent;
+            padding-left: 2rem;
+            padding-right: 16px + 52px;
+        }
+
+        .search_button {
+            right: 1rem;
+        }
+    }
 
     .navbar-nav {
-        margin-bottom: 40px;        
-        padding-left: 40px;
-        padding-right: 40px;
+        margin-bottom: 2rem;        
+        padding-left: 2rem;
+        padding-right: 2rem;
 
         .nav-item {
-            margin-left: -40px;
-            margin-right: -40px;
+            margin-left: -2rem;
+            margin-right: -2rem;
             
             .nav-link {
                 height: 36px;
                 width: 100%;
-                padding-left: 40px;
-                padding-right: 40px;
+                padding-left: 2rem;
+                padding-right: 2rem;
                 font-size: $font-size-sm;
                 font-weight: $font-weight-bold;
 
