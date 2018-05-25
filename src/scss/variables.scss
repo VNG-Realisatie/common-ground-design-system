@@ -5,13 +5,15 @@
 // Color
 $primary:                     #FEBF24;
 $secondary:                   #3D83FA;
+
+// Custom colors
 $color-text:                  #5b5e6d;
 $body-color:                    $color-text;
 
-$sec-100: tint($secondary, 95%);
-$sec-200: #B4D3FC;
-$sec-400: tint($secondary, 60%);
-$sec-500: tint($secondary, 35%);
+$sec-100: tint($secondary, 95%); // not bootstrap
+$sec-200: #B4D3FC; // not bootstrap
+$sec-400: tint($secondary, 60%); // not bootstrap
+$sec-500: tint($secondary, 35%); // not bootstrap
 
 // Grays
 $white:    #fff;
@@ -34,11 +36,13 @@ $link-decoration:               none;
 $link-hover-color:              $sec-500;
 $link-hover-decoration:         none;
 
-// $body-color:                  #435166;
+
+// Tooltip
 $tooltip-max-width:             340px;
 $tooltip-bg:                    white;
 $tooltip-color:                 $color-text;
 $tooltip-opacity:               1;
+
 
 // Font weight
 $font-weight-light:             300;
@@ -46,6 +50,7 @@ $font-weight-normal:            400;
 $font-weight-medium:            600;
 $font-weight-bold:              700;
 $font-weight-black:             800;
+
 
 // Font
 $font-family-sans-serif:        'Muli', sans-serif;
@@ -70,6 +75,7 @@ $h4-font-size:                  $font-size-base * 1.5 !default;
 $h5-font-size:                  $font-size-base * 1.25 !default;
 $h6-font-size:                  $font-size-base !default;
 
+
 // Container width
 $grid-breakpoints: (
   xs: 0,
@@ -86,23 +92,33 @@ $container-max-widths: (
     xl: 1240px
 );
 
+
 // Grid
 $grid-gutter-width:             40px;
+
 
 // Radius
 $border-radius:                 3px;
 $border-radius-lg:              5px;
 $border-radius-sm:              0;
 
+
 // Buttons
 $btn-font-weight:               $font-weight-bold;
 $input-btn-padding-y:           0;
 $input-btn-padding-x:           15px;
 
+
 // Inputs
+$input-height:                  48px; // not bootstrap
 $input-border-radius:           0;
 $input-border-color:            $gray-300;
 $input-placeholder-color:       $gray-500;
+
+
+// Code
+$code-background-color:       #292D3E; // not bootstrap
+$code-font-size:                $font-size-sm;
 
 
 // Tables
@@ -110,8 +126,10 @@ $table-border-color:            transparent;
 $table-border-width:            2px;
 $table-cell-padding:            10px 10px 14px;
 
-// Custom //
-$input-height:                  48px;
+
+// Cards
+$card-spacer-x:                 24px;
+$card-spacer-y:                 30px;
 
 // Transition
 $transition-base:               all .15s ease;

@@ -8,10 +8,25 @@
         overflow: hidden;
         text-overflow: ellipsis;
     }
+
+    > code {
+        &:first-child {
+            border-top-left-radius: $border-radius;
+            border-top-right-radius: $border-radius;
+        }
+        &:last-child {
+            border-bottom-left-radius: $border-radius;
+            border-bottom-right-radius: $border-radius;
+        }
+    }
 }
 
 .card-body {
-    padding: 24px 30px;
+    padding: $card-spacer-x $card-spacer-y;
+
+    + code {
+        margin-top: -$card-spacer-y / 2;
+    }
 }
 
 .card-title {

@@ -95,6 +95,10 @@ button {
     }
 }
 
+b, strong {
+    font-weight: $font-weight-bold;
+}
+
 :active {
     transition-duration: 100ms;
 }
