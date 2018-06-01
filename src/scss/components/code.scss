@@ -41,7 +41,9 @@ h2 {
     border-bottom: 1px solid $gray-300;
 
     .form-control {
-        border-top: none;
-        border-bottom: none;
+        // border-top: none;
+        // border-bottom: none;
+        margin-top: -1px;
+        margin-bottom: -1px;
     }
 }

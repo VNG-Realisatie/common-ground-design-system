@@ -1,8 +1,13 @@
 .navbar {
-    background-color: $white;
-    padding: 0 50px;
+    padding: 0;
     box-shadow: 0 1px 0 $gray-300;
     z-index: $zindex-fixed;
+
+    > .container {
+        @include media-breakpoint-down(sm) {
+            max-width: 100%;
+        }
+    }
 
     .navbar-nav {
         .nav-link {
@@ -37,6 +42,10 @@
         align-items: center;
         padding-top: 0;
         padding-bottom: 0;
-        color: $gray-500;        
+        color: $gray-500;
+
+        @include media-breakpoint-down(sm) {
+            width: 100%;
+        }
     }
 }

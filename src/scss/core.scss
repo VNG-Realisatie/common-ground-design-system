@@ -12,6 +12,7 @@ body {
     // @include media-breakpoint-up(xl) {
     //     font-size: 16px;
     // }
+    padding-top: 56px;
 }
 
 main {
@@ -89,6 +90,7 @@ button {
     background: none;
     border: none;
     text-align: left;
+    white-space: nowrap;
 
     &:not(:disabled):not(.disabled) {
         cursor: pointer;

@@ -44,12 +44,13 @@
   }
   
   .form-switch-label {
-        display: block;
-        padding-bottom: 2px;
+    display: block;
+    padding-bottom: 2px;
     margin-bottom: 0; // Override default `<label>` bottom margin
     font-size: $font-size-sm;
     font-weight: $font-weight-medium;
     color: $gray-500;
+    white-space: nowrap;
     
     &:before {
         content: '';
