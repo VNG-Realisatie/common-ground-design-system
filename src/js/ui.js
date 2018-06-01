@@ -5,8 +5,6 @@
 $(function () {
     $('[data-toggle="tooltip"]').tooltip({
         trigger: 'hover focus manual',
-        options : {
-            position: 'left'
-        }
+        placement: 'bottom'
     })
 })

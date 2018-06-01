@@ -1,8 +1,4 @@
 .table {
-    @include media-breakpoint-up(lg) {
-        table-layout: fixed;
-    }
-
     td, th {
         vertical-align: baseline;
     }
@@ -11,8 +7,13 @@
         th {
             border-bottom: none;
 
-            &:nth-child(1) {
+            &:nth-child(1),
+            &:nth-child(4) {
                 width: 100px;
+
+                button {
+                    text-align: center;
+                }
             }
 
             &:not(.sorting) {
@@ -37,18 +38,6 @@
                     display: inline-block;
                     vertical-align: middle;
                     margin-left: 4px;
-                }
-            }
-
-            &:first-child {
-                button {
-                    text-align: center;
-                }
-            }
-
-            &:last-child {
-                button {
-                    text-align: right;
                 }
             }
         }
@@ -93,7 +82,7 @@
             td:nth-child(4) {
                 font-size: $font-size-sm;
                 color: $gray-500;
-                text-align: right;
+                text-align: center;
                 padding-top: 0;
                 padding-bottom: 4px;
             }
