@@ -1,4 +1,4 @@
-FROM node:8-alpine AS build
+FROM node:9-alpine AS build
 
 # Install required build tools
 RUN apk add --no-cache \
