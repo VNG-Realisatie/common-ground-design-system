@@ -5,11 +5,17 @@ $grey-40: lighten(black, 90%);
 $grey-50: lighten(black, 60%);
 $grey-80: lighten(black, 30%);
 
-$primary: #6699FF;
-
 .Header {
     box-shadow: none;
     border-bottom: 1px solid $grey-40;
+}
+
+.Tree-items {
+    padding-left: .5rem;
+}
+
+.Tree-item {
+    font-size: 14px;
 }
 
 .Pen,
@@ -52,10 +58,6 @@ $primary: #6699FF;
     }
 }
 
-[dir="ltr"] .Tree-depth-2 .Tree-collectionLabel, [dir="ltr"] .Tree-depth-2 .Tree-entityLink {
-    // padding-left: 3rem;
-}
-
 .Tree-collectionLabel span {
     [dir="ltr"] & {
         margin-left: -2rem;
@@ -93,26 +95,42 @@ $primary: #6699FF;
     fill: $grey-80;
 }
 
-.Tree-entityLink,
+.Tree-collection {
+    margin-bottom: .5rem;
+}
+
 .Tree-collectionLabel {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+
+    &:hover {
+        background-color: transparent;
+    }
+}
+.Tree-entityLink {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+
     &:hover {
         background-color: $grey-20;
     }
-
+    
     .is-current & {
-        background-color: $grey-30;        
+        background-color: $grey-20;
+        color: $grey-80;
+
+        &:hover {
+            background-color: $grey-20;            
+            color: $grey-80;
+        }
     }
 }
 
-a.Tree-entityLink:hover {
-    color: $primary;
-}
-
-a {
-    color: $primary;
+a.Tree-entityLink {
+    color: $grey-50;
 
     &:hover {
-        color: darken($primary, 10%);
+        color: $grey-50;
     }
 }
 

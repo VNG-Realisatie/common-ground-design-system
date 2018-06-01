@@ -5,6 +5,7 @@
     height: 100vh;
     border-right: 1px solid $gray-200;
     z-index: $zindex-sticky;
+    overflow-y: auto;
 
     + .content {
         margin-left: 240px;
