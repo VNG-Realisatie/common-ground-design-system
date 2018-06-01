@@ -8,6 +8,10 @@ code {
     font-size: $font-size-tiny;
 }
 
+section {
+    padding: 3rem 0 1rem;
+}
+
 .content {
     background-color: white;
     font-size: $font-size-sm;
@@ -34,6 +38,7 @@ code {
 
 .actions {
     background-color: $gray-100;
+    border-top: 1px solid $gray-300;
     border-bottom: 1px solid $gray-300;
 
     .form-control {

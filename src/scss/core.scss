@@ -41,7 +41,7 @@ main {
         
         &:hover {
             color: $secondary;
-            border-color: $sec-400;
+            border-color: $secondary-400;
         }
     }
 }
@@ -115,8 +115,7 @@ small, .small {
 }
 
 .tooltip-inner {
-    padding: 10px 20px 12px;
-    text-align: left;
+    padding: 5px 12px 6px;
     border: 1px solid $gray-200;
     box-shadow: 0 2px 0 $gray-100;
 }

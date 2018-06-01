@@ -1,4 +1,5 @@
 const variants = [
+	'default',
 	'primary',
 	'secondary',
 	'outline-primary',

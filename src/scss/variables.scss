@@ -6,14 +6,17 @@
 $primary:                     #FEBF24;
 $secondary:                   #3D83FA;
 
-// Custom colors
-$color-text:                  #5b5e6d;
-$body-color:                    $color-text;
+$primary-200:                   tint($primary, 90%); // not bootstrap
+$primary-400:                   tint($primary, 60%); // not bootstrap
+$primary-500:                   tint($primary, 35%); // not bootstrap
 
-$sec-100: tint($secondary, 95%); // not bootstrap
-$sec-200: #B4D3FC; // not bootstrap
-$sec-400: tint($secondary, 60%); // not bootstrap
-$sec-500: tint($secondary, 35%); // not bootstrap
+$secondary-200:                 tint($secondary, 90%); // not bootstrap
+$secondary-400:                 tint($secondary, 60%); // not bootstrap
+$secondary-500:                 tint($secondary, 35%); // not bootstrap
+
+$color-text:                  #5b5e6d; // not bootstrap
+$body-color:                    $color-text; // not bootstrap
+
 
 // Grays
 $white:    #fff;
@@ -33,7 +36,7 @@ $black:    #000;
 $link-color:                    $secondary;
 $link-decoration:               none;
 
-$link-hover-color:              $sec-500;
+$link-hover-color:              $secondary-500;
 $link-hover-decoration:         none;
 
 
@@ -135,7 +138,6 @@ $btn-font-weight:               $font-weight-bold;
 $input-btn-padding-y:           0;
 $input-btn-padding-x:           1rem;
 
-
 // Inputs
 $input-height:                  3rem; // not bootstrap
 $input-border-radius:           0;
@@ -176,3 +178,5 @@ $trans-slow: $trans-time-slow ease;
 $trans-material-fast: $trans-time-fast $trans-bezier;
 $trans-material-normal: $trans-time-normal $trans-bezier;
 $trans-material-slow: $trans-time-slow $trans-bezier;
+
+$btn-transition:                all $trans-fast;

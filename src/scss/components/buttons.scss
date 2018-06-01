@@ -2,20 +2,15 @@
     height: 44px;
     padding-top: 4px;
     padding-bottom: 0;
-}   
-
-.btn-primary {
-    color: white;
-    border-color: transparent !important;
-    box-shadow: 0 3px 0 darken($primary, 10%);
-    box-shadow: 0 3px 0 transparentize($primary, .8);
-    
-    &:not(.disabled):not(.disabled) {
-        &:hover,
-        &:active {
-            color: white;
-        }
-    }
 }
 
+.btn-icon {
+    width: 44px;
+    border-radius: 22px;
+    padding: 0;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
 

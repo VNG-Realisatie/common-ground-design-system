@@ -26,6 +26,12 @@
                 color: $color-text;
                 font-size: $font-size-sm;
                 text-transform: uppercase;
+                transition: color $trans-fast;
+
+                &:hover,
+                &:focus {
+                    color: $color-text;
+                }
 
                 svg {
                     display: inline-block;
@@ -87,6 +93,9 @@
             td:nth-child(4) {
                 font-size: $font-size-sm;
                 color: $gray-500;
+                text-align: right;
+                padding-top: 0;
+                padding-bottom: 4px;
             }
 
             td {
