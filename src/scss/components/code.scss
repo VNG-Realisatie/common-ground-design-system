@@ -20,12 +20,6 @@ section {
         padding: 4rem 0 1rem;
     }
 
-    h2 {
-        font-size: 20px;
-        color: $secondary;
-        margin-bottom: 18px;
-    }
-    
     .card {
         background-color: $gray-100;
 
@@ -35,6 +29,11 @@ section {
     }
 }
 
+h2 {
+    font-size: 20px;
+    color: $secondary;
+    margin-bottom: 18px;
+}
 
 .actions {
     background-color: $gray-100;
