@@ -199,18 +199,18 @@ gulp.task('svg:watch', function () {
 /* Fonts */
 
 gulp.task('fonts:copy', function () {
-	return gulp.src('assets/fonts/**/*')
-	.pipe(gulp.dest('public/assets/fonts'));
+	return gulp.src('src/fonts/**/*')
+	.pipe(gulp.dest('public/fonts'));
 });
 
 gulp.task('fonts:clean', function (done) {
-	return del(['public/assets/fonts'], done);
+	return del(['public/fonts'], done);
 });
 
 gulp.task('fonts', gulp.series('fonts:clean', 'fonts:copy'));
 
 gulp.task('fonts:watch', function () {
-	gulp.watch('assets/fonts/**/*', watchOpt, gulp.parallel('fonts'));
+	gulp.watch('src/fonts/**/*', watchOpt, gulp.parallel('fonts'));
 });
 
 /* Images */
