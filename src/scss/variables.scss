@@ -61,9 +61,9 @@ $font-weight-base:              $font-weight-light;
 $line-height-base:              1.9;
 
 $font-size-base:                1rem; // Assumes the browser default, typically `16px`
-$font-size-lg:                  ($font-size-base * 1.25); // 14px
-$font-size-sm:                  ($font-size-base * .875);
-$font-size-tiny:                ($font-size-base * .75); // not bootstrap
+$font-size-lg:                  ($font-size-base * 1.25); // 20px
+$font-size-sm:                  ($font-size-base * .875); // 14px
+$font-size-tiny:                ($font-size-base * .75); // 12px not bootstrap
 
 
 // Heading
