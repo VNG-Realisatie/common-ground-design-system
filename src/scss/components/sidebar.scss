@@ -13,7 +13,6 @@
     .search {
         margin-left: -1px;
         margin-right: -1px;
-        margin-bottom: 2rem;
 
         .form-control {
             background-color: transparent;
@@ -27,7 +26,8 @@
     }
 
     nav {
-        max-height: calc(100vh - 9rem);
+        padding-top: 2rem;
+        max-height: calc(100vh - 6.5rem);
         overflow-y: auto;
 
         .navbar-nav {
