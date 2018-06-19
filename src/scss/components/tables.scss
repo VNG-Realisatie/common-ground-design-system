@@ -21,7 +21,7 @@
                     color: $gray-500;
                 }
             }
-            
+
             button {
                 width: 100%;
                 color: $color-text;
@@ -29,9 +29,11 @@
                 text-transform: uppercase;
                 transition: color $trans-fast;
 
-                &:hover,
-                &:focus {
-                    color: $color-text;
+                &:not(:disabled) {
+                    &:hover,
+                    &:focus {
+                        color: $color-text;
+                    }
                 }
 
                 svg {
@@ -62,7 +64,7 @@
                     color: #FF8282;
                 }
             }
-            
+
             td:nth-child(1) {
                 color: #B3E87B;
 
@@ -88,26 +90,17 @@
             }
 
             td {
+                box-shadow: 0 -1px 0 $gray-300;
 
-                box-shadow:
-                    0 -1px 0 $gray-300
-                ;
-            
                 &:first-child {
-                    box-shadow:
-                    0 -1px 0 $gray-300,
-                    -1px 0 $gray-300
-                    ;
+                    box-shadow: 0 -1px 0 $gray-300, -1px 0 $gray-300;
                 }
-                
+
                 &:last-child {
-                    box-shadow:
-                    0 -1px 0 $gray-300,
-                    1px 0 $gray-300
-                    ;
+                    box-shadow: 0 -1px 0 $gray-300, 1px 0 $gray-300;
                 }
             }
-            
+
             &:last-child {
                 td {
                     box-shadow:
@@ -122,7 +115,7 @@
                             -1px 0 $gray-300
                         ;
                     }
-        
+
                     &:last-child {
                         box-shadow:
                             0 -1px 0 $gray-300,
