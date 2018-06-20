@@ -25,3 +25,20 @@
         }
     }
 }
+
+.search--filter {
+    .search_button {
+        right: auto;
+        left: 0;
+
+        &:after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 9px;
+            bottom: 9px;
+            width: 1px;
+            background-color: $gray-400;
+        }
+    }
+}
