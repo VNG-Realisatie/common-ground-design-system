@@ -7,14 +7,14 @@
         th {
             border-bottom: none;
 
-            &:nth-child(1),
-            &:nth-child(4) {
-                width: 100px;
+            // &:nth-child(1),
+            // &:nth-child(4) {
+            //     width: 100px;
 
-                button {
-                    text-align: center;
-                }
-            }
+            //     button {
+            //         text-align: center;
+            //     }
+            // }
 
             &:not(.sorting) {
                 button {
@@ -26,13 +26,14 @@
                 width: 100%;
                 color: $color-text;
                 font-size: $font-size-sm;
+                font-weight: $font-weight-bold;
                 text-transform: uppercase;
                 transition: color $trans-fast;
 
                 &:not(:disabled) {
                     &:hover,
                     &:focus {
-                        color: $color-text;
+                        color: $gray-900;
                     }
                 }
 
@@ -47,6 +48,7 @@
 
     tbody {
         td {
+            font-size: $font-size-sm;
             background-color: white;
 
             > span {
@@ -59,35 +61,39 @@
         }
 
         tr {
+            &.code {
+                font-family: 'Fira Code', monospace;
+                font-size: $font-size-tiny;
+            }
             &.status-inactive {
                 td:nth-child(1) {
                     color: #FF8282;
                 }
             }
 
-            td:nth-child(1) {
-                color: #B3E87B;
+            // td:nth-child(1) {
+            //     color: #B3E87B;
 
-                svg {
-                    margin: 0 auto;
-                }
-            }
+            //     svg {
+            //         margin: 0 auto;
+            //     }
+            // }
 
-            td:nth-child(2) {
-                font-weight: $font-weight-bold;
-            }
+            // td:nth-child(2) {
+            //     font-weight: $font-weight-bold;
+            // }
 
-            td:nth-child(3) {
-                font-size: $font-size-sm;
-            }
+            // td:nth-child(3) {
+            //     font-size: $font-size-sm;
+            // }
 
-            td:nth-child(4) {
-                font-size: $font-size-sm;
-                color: $gray-500;
-                text-align: center;
-                padding-top: 0;
-                padding-bottom: 4px;
-            }
+            // td:nth-child(4) {
+            //     font-size: $font-size-sm;
+            //     color: $gray-500;
+            //     text-align: center;
+            //     padding-top: 0;
+            //     padding-bottom: 4px;
+            // }
 
             td {
                 box-shadow: 0 -1px 0 $gray-300;
@@ -149,5 +155,4 @@
             }
         }
     }
-
 }
