@@ -7,7 +7,7 @@
     display: block;
     padding-left: 42px;
   }
-  
+
   .form-switch-input {
     position: absolute;
     top: 0;
@@ -16,7 +16,7 @@
     height: 100%;
     margin: 0;
     opacity: 0;
-  
+
     &:not(:disabled) {
         cursor: pointer;
     }
@@ -24,7 +24,7 @@
     &:disabled ~ .form-switch-label {
         color: $text-muted;
     }
-    
+
     &:hover ~ .form-switch-label,
     &:focus ~ .form-switch-label {
         &:after {
@@ -37,12 +37,12 @@
             background-color: $primary;
         }
         &:after {
-            border-color: $primary;                
+            border-color: $primary;
             transform: translateX(14px);
         }
     }
   }
-  
+
   .form-switch-label {
     display: block;
     padding-bottom: 2px;
@@ -51,7 +51,8 @@
     font-weight: $font-weight-medium;
     color: $gray-500;
     white-space: nowrap;
-    
+    height: 28px;
+
     &:before {
         content: '';
         position: absolute;
@@ -79,6 +80,6 @@
         background-color: white;
         border: 2px solid $gray-400;
         transition: transform $trans-material-fast, border-color $trans-material-fast;
-        pointer-events: none;        
+        pointer-events: none;
     }
   }
