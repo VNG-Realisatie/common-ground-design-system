@@ -9,15 +9,6 @@
         th {
             border-bottom: none;
 
-            // &:nth-child(1),
-            // &:nth-child(4) {
-            //     width: 100px;
-
-            //     button {
-            //         text-align: center;
-            //     }
-            // }
-
             &:not(.sorting) {
                 button {
                     color: $gray-500;
@@ -67,35 +58,6 @@
                 font-family: 'Fira Code', monospace;
                 font-size: $font-size-tiny;
             }
-            &.status-inactive {
-                td:nth-child(1) {
-                    color: #FF8282;
-                }
-            }
-
-            // td:nth-child(1) {
-            //     color: #B3E87B;
-
-            //     svg {
-            //         margin: 0 auto;
-            //     }
-            // }
-
-            // td:nth-child(2) {
-            //     font-weight: $font-weight-bold;
-            // }
-
-            // td:nth-child(3) {
-            //     font-size: $font-size-sm;
-            // }
-
-            // td:nth-child(4) {
-            //     font-size: $font-size-sm;
-            //     color: $gray-500;
-            //     text-align: center;
-            //     padding-top: 0;
-            //     padding-bottom: 4px;
-            // }
 
             td {
                 box-shadow: 0 -1px 0 $gray-300;
