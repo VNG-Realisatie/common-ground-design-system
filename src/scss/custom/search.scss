@@ -27,7 +27,13 @@
 }
 
 .search--filter {
+    .form-control {
+        padding-right: 0;
+        padding-left: 52px;
+    }
+
     .search_button {
+        width: 40;
         right: auto;
         left: 0;
 

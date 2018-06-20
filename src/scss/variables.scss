@@ -141,7 +141,7 @@ $input-btn-padding-x:           1rem;
 
 // Inputs
 $input-height:                  3rem; // not bootstrap
-$input-border-radius:           0;
+$input-border-radius:           $border-radius-lg;
 $input-border-color:            $gray-300;
 $input-placeholder-color:       $gray-500;
 
