@@ -6,9 +6,21 @@
     position: relative;
     display: block;
     padding-left: 42px;
-  }
+}
 
-  .form-switch-input {
+.form-switch--alwaysOn {
+    .form-switch-label {
+        &:before {
+            background-color: $primary !important;
+        }
+
+        &:after {
+            border-color: $primary !important;
+        }
+    }
+}
+
+.form-switch-input {
     position: absolute;
     top: 0;
     left: 0;
@@ -41,9 +53,9 @@
             transform: translateX(14px);
         }
     }
-  }
+}
 
-  .form-switch-label {
+.form-switch-label {
     display: block;
     padding-bottom: 2px;
     margin-bottom: 0; // Override default `<label>` bottom margin
@@ -82,4 +94,4 @@
         transition: transform $trans-material-fast, border-color $trans-material-fast;
         pointer-events: none;
     }
-  }
+}
