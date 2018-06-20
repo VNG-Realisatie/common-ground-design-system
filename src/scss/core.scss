@@ -1,18 +1,12 @@
 body {
+    padding-top: 56px;
+    padding-bottom: 4rem;
     background-color: $gray-100;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
     text-rendering: optimizeLegibility;
-
-    // @include media-breakpoint-down(xl) {
-    //     font-size: 14px;
-    // }
-    // @include media-breakpoint-up(xl) {
-    //     font-size: 16px;
-    // }
-    padding-top: 56px;
 }
 
 main {
@@ -39,7 +33,7 @@ main {
     a {
         color: $secondary;
         border-bottom: 1px solid transparent;
-        
+
         &:hover {
             color: $secondary;
             border-color: $secondary-400;
@@ -86,7 +80,7 @@ small {
 }
 
 button {
-    padding: 0;    
+    padding: 0;
     background: none;
     border: none;
     text-align: left;
@@ -113,7 +107,7 @@ small, .small {
 .sm-order-1 {
     @include media-breakpoint-down(sm) {
         order: 1;
-    }    
+    }
 }
 
 .tooltip-inner {
