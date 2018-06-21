@@ -1,11 +1,11 @@
 {{> @navbar }}
-<div class="actions">
+<section>
     <div class="container">
         <div class="row">
             <div class="col-sm-6 col-lg-4 offset-lg-2">
-                <div class="search">
+                <div class="search search-filter">
                     <input class="form-control" type="text" placeholder="Search in docs">
-                    <button class="search_button" value="">
+                    <button class="search_button" disabled>
                         <svg width="14" height="14">
                             <use xlink:href="#search" />
                         </svg>
@@ -24,9 +24,9 @@
             </div>
         </div>
     </div>
-</div>
-<div class="container">
-        <section>
-            {{> @table }}
-        </section>
-</div>
+</section>
+<section>
+    <div class="container">
+        {{> @table }}
+    </div>
+</section>

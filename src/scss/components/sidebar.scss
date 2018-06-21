@@ -3,7 +3,6 @@
     left: 0;
     width: 240px;
     height: 100vh;
-    border-right: 1px solid $gray-200;
     z-index: $zindex-sticky;
 
     + .content {
@@ -11,13 +10,13 @@
     }
 
     .search {
-        margin-left: -1px;
-        margin-right: -1px;
-
         .form-control {
             background-color: transparent;
             padding-left: 2rem;
             padding-right: 16px + 52px;
+            border: none;
+            border-bottom: 1px solid $gray-200;
+            border-radius: 0;
         }
 
         .search_button {

@@ -1,6 +1,6 @@
 .navbar {
     padding: 0;
-    box-shadow: 0 1px 0 $gray-300;
+    box-shadow: 0 1px 4px transparentize(black, .95);
     z-index: $zindex-fixed;
 
     > .container {
@@ -11,19 +11,19 @@
 
     .navbar-nav {
         .nav-link {
-            height: 56px;            
+            height: 56px;
             padding-left: 20px;
             padding-right: 20px;
             padding-bottom: 2px;
             font-size: 16px;
-        
+
             &:hover {
                 background-color: $gray-100;
             }
         }
-        
+
         .active .nav-link {
-            color: $gray-800;        
+            color: $gray-800;
         }
     }
 
