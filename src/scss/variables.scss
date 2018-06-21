@@ -155,6 +155,7 @@ $mark-padding:                  0;
 $mark-bg:                       transparentize($primary, .85);
 .mark, mark {
     display: inline-block;
+    color: inherit;
 }
 
 // Tables
