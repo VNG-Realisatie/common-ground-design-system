@@ -151,6 +151,12 @@ $code-background-color:       #292D3E; // not bootstrap
 $code-font-size:                $font-size-sm;
 
 
+$mark-padding:                  0;
+$mark-bg:                       transparentize($primary, .85);
+.mark, mark {
+    display: inline-block;
+}
+
 // Tables
 $table-border-color:            transparent;
 $table-border-width:            2px;
